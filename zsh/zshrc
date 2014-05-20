@@ -34,18 +34,8 @@ typeset -U fpath
 export ANDROID_SDK='/usr/local/android/sdk'
 export ANDROID_TARGET='18'
 
-if mac; then
-    # for riak and possibly building javascriptcore
-    export COMMAND_MODE=unix2003
-
-    # Don't pollute tar archives with ._ files (Apple double files)
-    export COPYFILE_DISABLE=true
-
-    # Develop on Mac
-    export RACK_ENV="development"
-    export RACK_PORT=4001
-    export NODE_ENV="development"
-fi
+export RACK_ENV="development"
+export NODE_ENV="development"
 
 cdpath=(~)
 
@@ -265,7 +255,7 @@ alias rii='ri -Tf ansi'
 if command_exists git; then
 	alias a='git add'
 	alias b='git branch'
-	alias c='git commit'
+#	alias c='git commit'
 	alias cam='git commit -a -m'
 	alias co='git checkout'
 	alias chp='git cherry-pick'
