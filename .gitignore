@@ -1,7 +1,3 @@
 zsh/zhistory
 zsh/.zcompdump
-emacs.d/auto-save-list/.saves*
-.DS_Store
-*.pyc
-*.cache
 irb_history
